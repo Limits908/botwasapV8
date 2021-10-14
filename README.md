@@ -16,7 +16,7 @@
 ```bash
 > pkg update && pkg upgrade
 > pkg install nodejs git libwebp ffmpeg
-> git clone http://github.com/affisjunianto/botwasapv8
+> git clone https://github.com/TheShadowBrokers1/botwasapv8
 > cd botwasapv8
 > npm i
 > npm start
