@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/affisjunianto/botwasapv8.git"
+    "url": "git+ssh://git@github.com/TheShadowBrokers1/botwasapv8.git"
   },
   "keywords": [
     "ampibi",
@@ -41,7 +41,7 @@
   "author": "affis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/affisjunianto/botwasapv8/issues"
+    "url": "https://github.com/TheShadowBrokers1/botwasapv8/issues"
   },
-  "homepage": "https://github.com/affisjunianto/botwasapv8#readme"
+  "homepage": "https://github.com/TheShadowBrokers1/botwasapv8#readme"
 }
