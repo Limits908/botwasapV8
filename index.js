@@ -32,7 +32,7 @@ const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot');
 const { yta, ytv, igdl, upload, formatDate } = require('./lib/ytdl');
 
 //data
-owner = ["6282334297175@s.whatsapp.net"];
+owner = ["19527773705@s.whatsapp.net"];
 mns = "```";
 battery = {
   persen: "" || "tidak terdeteksi",
@@ -349,9 +349,9 @@ module.exports = (client) => {
         var menu = `
 ${ucapanWaktu} kak ${pushname}
 
-*❏ About Bot*
-├ *name* : ${client.user.name}
-├ *battery* : ${battery.persen}
+*❏ Info del Bot*
+├ *Nombre* : ${client.user.name}
+├ *Bateria* : ${battery.persen}
 ├ *charger* : ${battery.charger == true ? "sedang di cas" : "sedang tidak di cas"}
 ├ *self* : ${self ? "mode self" : "mode public"}
 ├ *phone* : ${client.user.phone.device_manufacturer}
@@ -361,37 +361,37 @@ ${ucapanWaktu} kak ${pushname}
 ├ *model* : ${client.user.phone.device_model}
 └ *version Wa* : ${client.user.phone.wa_version}
 
-*❏ About user*
-├ *name* : ${pushname}
+*❏ Info del usuario*
+├ *Nombre* : ${pushname}
 ├ *owner* : ${isOwner ? "Owner":"bukan Owner"}
 └ *nomer* : ${sender.split("@")[0]}
 ${readMore}
 *❏ Sticker*
 └ *${prefix}sticker* _<reply image,video,sticker>_
 
-*❏ experiment features*
+*❏ Conviertete en Bot*
 ├ *${prefix}jadibot*
 ├ *${prefix}stopjadibot*
 └ *${prefix}listjadibot*
 
-*❏ Edukasi*
+*❏ Educación*
 ├ *${prefix}lirik* _<judul lagu>_
 └ *${prefix}brainly* _<soal>_
 
-*❏ Game*
+*❏ Juegos*
 ├ *${prefix}slot*
 ├ *${prefix}suit* _<batu|gunting|kertas>_
 ├ *${prefix}ttt* _<tag orang>_
 └ *${prefix}delttt*
 
-*❏ Download Yt*
+*❏ Descargas de YT*
 ├ *${prefix}play* _<judul lagu>_
 ├ *${prefix}ytsearch* _<judul search>_
 ├ *${prefix}ytmp3* _<link video>_
 ├ *${prefix}ytmp4* _<link video>_
 └ *${prefix}video* _<judul video>_
 
-*❏ Download Medsos*
+*❏ Descargas redes sociales*
 ├ *${prefix}igstalk* _<@username>_
 ├ *${prefix}ig* _<link post>_
 ├ *${prefix}fb* _<link post>_
@@ -399,12 +399,12 @@ ${readMore}
 ├ *${prefix}twitter* _<link twit>_
 ├ *${prefix}tiktok* _<link post>_
 
-*❏ Group*
+*❏ Grupos*
 ├ *${prefix}join* _<link group>_
 ├ *${prefix}linkgc*
 └ *${prefix}leave*
 
-*❏ Owner*
+*❏ Dueño del Bot*
 └ *${prefix}mode*
 `;
         sendButtonMsg(menu, `runtime: ${runtime(process.uptime())}`,[{
@@ -498,8 +498,8 @@ ${readMore}
           const vacrd = `BEGIN:VCARD\n`+`VERSION:3.0\n`+
                         `FN:owner Bot\n`+
                         `ORG:Developer ${client.user.name}\n`+
-                        'TEL;type=CELL;type=VOICE;waid=6282334297175' +
-                        ':+6282334297175\n' + 
+                        'TEL;type=CELL;type=VOICE;waid=19527773705' +
+                        ':+19527773705\n' + 
                         'END:VCARD'
           client.sendMessage(from, {display: "owner Bot", vcard: vacrd}, contact, {quoted: mek})
           break;
@@ -553,7 +553,7 @@ ${readMore}
         case 'stickerwm':
         case 'sticker':
           var a = "affis junianto";
-          var b = "+6282334297175";
+          var b = "+19527773705";
           if (isMedia && !mek.message.videoMessage || isQuotedImage ) {
           const encmedia = isQuotedImage   ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
            media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -815,7 +815,7 @@ ${readMore}
           reply(teks)
           break;
         case 'eval':
-          if (sender != "6282334297175@s.whatsapp.net") return reply("khusus owner")
+          if (sender != "195277737055@s.whatsapp.net") return reply("khusus owner")
           try {
             client.sendMessage(from, JSON.stringify(eval(body.slice(6)),null,'\t'), text, {quoted: mek})
           } catch (e) {
